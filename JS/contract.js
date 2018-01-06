@@ -6,11 +6,6 @@ if (typeof web3 !== 'undefined')
     //initiate contract for an address
     var MyContract = web3.eth.contract(contractAbi);
     var myContractInstance = MyContract.at(contractAddress);
-
-    function handle(result)
-    {
-        console.log('Res: ' + result);
-    }
     
     function getTokens(callbackFunction)
     {
